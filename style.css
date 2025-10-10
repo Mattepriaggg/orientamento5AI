@@ -11,8 +11,8 @@ body {
 }
 
 header{
-    background: linear-gradient(to right, #003dad, rgb(0, 89, 161));
-    box-shadow: 0 0 10px #003dad;
+    background: linear-gradient(to right, #561B8B 0%, #3C4CA3 80%, #0059A1 100%);
+    box-shadow: 0 0 10px #561B8B;
     width: 100vw;
     height: 150px;
     color: white;
@@ -32,15 +32,6 @@ header{
     align-items: center;
 }
 
-span {
-    width: 80%;
-    height: 10px;
-    border-radius: 30px;
-    /* border: solid red 2px; */
-    background-color: #D9D9D9;
-    margin-bottom: 30px;
-}
-
 a {
     text-decoration: none;
 }
@@ -51,7 +42,7 @@ a {
     /* border: solid red 2px; */
     min-width: 153px;
     border: none;
-    background: linear-gradient(to right, #0059FF, rgb(3, 142, 255));
+    background: linear-gradient(to right, #561B8B, rgb(3, 142, 255));
     color: white;
     transition: transform .3s cubic-bezier(.215, .61, .355, 1);
 }
@@ -68,7 +59,7 @@ a {
     /* border: solid red 2px; */
     min-width: 153px;
     border: none;
-    background: linear-gradient(to right, #0059FF, rgb(3, 142, 255));
+    background: linear-gradient(to right, #561B8B, rgb(3, 142, 255));
     color: white;
 }
 
@@ -82,8 +73,9 @@ a {
     padding: 30px;
         flex-direction: column;
 }
-    .btn_card {
+    .btn_card_argomenti {
         position: absolute;
+        margin-top: 50px;
         bottom: 10px;
         width: 100px;
         height: 50px;
@@ -92,6 +84,16 @@ a {
     }
     
 
+
+/* INDEX.HTML */
+span {
+    width: 80%;
+    height: 10px;
+    border-radius: 30px;
+    /* border: solid red 2px; */
+    background-color: #D9D9D9;
+    margin-bottom: 30px;
+}
 .cross {
     position: relative;
     display: inline-block;
@@ -129,3 +131,15 @@ footer{
     padding: 20px;
 }
 
+
+/* PAGINE */
+.cards {
+    display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    margin: 50px 0;
+}
+    .card h5{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
