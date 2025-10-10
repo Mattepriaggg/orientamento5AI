@@ -27,11 +27,9 @@
             <p>Impresa</p>
             <p>Azienda</p>
             <p>Gestione aziendale</p>
-            <button id="5Anno" class="btn_card_argomenti card-btn">Esempio</button>
+            <button id="anno_unico" class="btn_card_argomenti card-btn">Esempio</button>
         </div>
-        
     </div>
-
 
     <div id="esempio3" class="esempi">
         <h3>ESEMPIO 5 ANNO</h3>
@@ -45,5 +43,12 @@
     <p>Product by Pria&Emi&Pipi SRL.</p>
 </footer>
 
-<script src="script.js"></script>
+<script>
+    // esempi
+    let esempio3 = document.getElementById('esempio3');
+    let unico = document.getElementById('anno_unico');
+    unico.addEventListener('click', function() {
+        esempio3.classList.toggle('visible');
+    })
+</script>
 </html>
