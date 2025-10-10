@@ -1,0 +1,9 @@
+.cards {
+    display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    margin: 50px 0;
+}
+    .card h5{
+        font-size: 20px;
+    }
