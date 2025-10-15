@@ -9,6 +9,7 @@ let botton4 = document.getElementById('4Anno');
 let botton5 = document.getElementById('5Anno');
 let unico = document.getElementById('anno_unico');
 
+
 botton3.addEventListener('click', function() {
     esempio3.classList.toggle('visible');
     esempio4.classList.remove('visible');
@@ -24,5 +25,6 @@ botton5.addEventListener('click', function() {
     esempio3.classList.remove('visible');
     esempio4.classList.remove('visible');
 })
+
 
 
