@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="extra.css">
 
     <title>EXTRA</title>
 </head>
@@ -39,12 +40,15 @@
 
     <div id="esempio3" class="esempi">
         <h3>Videogioco</h3>
-        <div class="imgs center">
-            <a onclick="apriVideo()"><img src="assets/EXTRA1.png"></a>
-        </div>
+        <a onclick="apriVideo()"><div class="imgs center">
+            <img src="assets/EXTRA1.png">
+        </div></a>
     </div>
 
-    <video src=""></video> <!--mettere video videogioco-->
+    <div onclick="apriVideo()" id="div_video_videogioco" class="center video_gioco hidden">
+        <video id="video_videogioco" src="assets/video.mp4" controls></video> <!--mettere video videogioco-->
+    </div>
+    
 
     <div id="esempio4" class="esempi">
         <h3>STAGE</h3>
@@ -75,8 +79,19 @@
         esempio3.classList.toggle('visible');
         esempio4.classList.toggle('visible');
         esempio5.classList.toggle('visible');
-        console.log('ciaoo')
     })
+
+
+    // video
+    function apriVideo() {
+        let videoDiv = document.getElementById("div_video_videogioco");
+        let video = document.getElementById("video_videogioco");
+        videoDiv.classList.toggle("hidden");
+        if (videoDiv.classList.contains("hidden")) {
+            video.pause();
+            video.currentTime = 0;
+        }
+    }
 </script>
 <script src="script.js"></script>
 </html>
