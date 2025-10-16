@@ -18,7 +18,12 @@
             <h5>(non e' solo programmazione)</h5>
         </div>
     </header>
-    <a id="home_link" href="index.html">Home</a>
+
+    <!-- menu -->
+    <a id="home_link"></a> 
+    <script src="home.js"></script>
+    <!-- modifica da menu.js -->
+
     <h1>EXTRA</h1>
 
     <div class="cards center">
@@ -35,9 +40,11 @@
     <div id="esempio3" class="esempi">
         <h3>Videogioco</h3>
         <div class="imgs center">
-            <img src="assets/EXTRA1.png" >
+            <a onclick="apriVideo()"><img src="assets/EXTRA1.png"></a>
         </div>
     </div>
+
+    <video src=""></video> <!--mettere video videogioco-->
 
     <div id="esempio4" class="esempi">
         <h3>STAGE</h3>
@@ -68,6 +75,8 @@
         esempio3.classList.toggle('visible');
         esempio4.classList.toggle('visible');
         esempio5.classList.toggle('visible');
+        console.log('ciaoo')
     })
 </script>
+<script src="script.js"></script>
 </html>
