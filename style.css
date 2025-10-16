@@ -49,6 +49,9 @@ header{
 a {
     text-decoration: none;
 }
+b {
+    background-color: rgba(255, 255, 0, 0.384);
+}
 .first-btn {
     border-radius: 20px;
     padding: 13px;
@@ -187,11 +190,22 @@ footer{
 .imgs {
     gap: 30px;
     margin-top: 30px;
+    width: 100%;
+    /* border: solid red 2px; */
+    overflow: hidden;
+    flex-wrap: wrap;
 }
-img {
-    max-width: 500px;
+.imgs img {
+    width: 40%;
+    min-width: 250px;
 }
 
 .visible {
     display: block;
+}
+
+@media (max-width: 502px) {
+    .imgs {
+        flex-direction: column;
+    }
 }

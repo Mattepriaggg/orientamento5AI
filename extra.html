@@ -46,7 +46,7 @@
     </div>
 
     <div onclick="apriVideo()" id="div_video_videogioco" class="center video_gioco hidden">
-        <video id="video_videogioco" src="assets/video.mp4" controls></video> <!--mettere video videogioco-->
+        <video id="video_videogioco" src="assets/video.mp4" controls muted></video> <!--mettere video videogioco-->
     </div>
     
 
@@ -86,11 +86,13 @@
     function apriVideo() {
         let videoDiv = document.getElementById("div_video_videogioco");
         let video = document.getElementById("video_videogioco");
-        videoDiv.classList.toggle("hidden");
-        if (videoDiv.classList.contains("hidden")) {
+        if (!videoDiv.classList.contains("hidden")) {
+            video.muted = false;
+        }
+
             video.pause();
             video.currentTime = 0;
-        }
+        videoDiv.classList.toggle("hidden");
     }
 </script>
 <script src="script.js"></script>
